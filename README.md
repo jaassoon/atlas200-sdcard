@@ -1,15 +1,11 @@
 # atlas200-sdcard
 sdcard making image of docker for atlas200
 ## prerequisites 
-### ubuntu host
-* You should install qemu-user-static and copy the installed bin file to the place same with Dockerfile.
+* Register qemu.
 ```shell
-apt install qemu-user-static
-cp /usr/bin/qemu-aarch64-static .
+docker run --rm --privileged hypriot/qemu-register
 ```
-### centos host
-* You should upgrade your linux kernel version up to >= 4.9.
-* install qemu-user-static and copy the installed bin file to the place same with Dockerfile.
+* If your host machine is centos, you should upgrade your linux kernel version up to >= 4.9.
 ## how to build 
 ```docker build . ```
 ## make sd card
