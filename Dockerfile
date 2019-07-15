@@ -13,4 +13,5 @@ RUN apt-get update;\
     apt-get install -y --no-install-recommends python python-pip python ipython;\
     rm -rf /var/lib/apt/lists/*
 
-RUN wget http://old-releases.ubuntu.com/releases/16.04.3/ubuntu-16.04.3-server-arm64.iso > /dev/null 2>&1
+# should download by yourself 
+#RUN wget http://old-releases.ubuntu.com/releases/16.04.3/ubuntu-16.04.3-server-arm64.iso > /dev/null 2>&1
