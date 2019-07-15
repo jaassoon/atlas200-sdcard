@@ -1,5 +1,4 @@
 FROM aarch64/ubuntu:xenial
-COPY qemu-aarch64-static /usr/bin
 COPY basic_pkg.sh /build/
 RUN  bash /build/basic_pkg.sh
 
