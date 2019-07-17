@@ -31,6 +31,7 @@ docker run --rm --privileged --name atlas-sdcard-vm --device=/dev/sdb:/dev/sdb -
 ```
 * Copy the ISO file into your container
 ```shell
+wget http://old-releases.ubuntu.com/releases/16.04.3/ubuntu-16.04.3-server-arm64.iso > /dev/null 2>&1
 docker cp /LOCATION-OF-ISO/ubuntu-16.04.3-server-arm64.iso atlas-sdcard-vm:/opt
 docker cp /LOCATION-OF-RAR/mini_developerkit-1.1.T8.B750SP05.rar atlas-sdcard-vm:/opt
 ```
