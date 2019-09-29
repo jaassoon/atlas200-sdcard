@@ -1,6 +1,7 @@
 # atlas200-sdcard
 sdcard making image of docker for atlas200
 ## prerequisites 
+* Centos or ubuntu
 * Register qemu.
 ```shell
 docker run --rm --privileged hypriot/qemu-register
@@ -42,7 +43,8 @@ docker cp /LOCATION-OF-RAR/mini_developerkit-1.1.T8.B750SP05.rar atlas-sdcard-vm
 * Umount your sd card from host machine
 * Make sd card
 ```shell
-python3 make_sd_card.py local /dev/sdb
+mkdir -p /opt/sd_card_making_log/no_touch_make_sd_dir
+bash -x make_ubuntu_sd.sh /dev/sdb /opt ubuntu-16.04.3-server-arm64.iso mini_developerkit-1.1.T8.B750SP05.rar 192.168.0.2 192.168.1.2
 ```
 * Test
 ```shell
