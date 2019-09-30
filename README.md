@@ -25,7 +25,9 @@ reboot
 ## how to build 
 ```docker build . -t atlas-sdcard-img```
 ## make sd card
-* Download the mini package file from [another location at here](https://github.com/Ascend/ascenddk-private/tree/master/B750SP05).
+* Download the mini package file from [another location at here](https://github.com/Ascend/tools/blob/master/B750SP05/mini_developerkit-1.1.T8.B750SP05.rar).  
+Or download by command as below:  
+```wget https://media.githubusercontent.com/media/Ascend/tools/master/B750SP05/mini_developerkit-1.1.T8.B750SP05.rar ```
 * Use fdisk tool to confirm the name of sd-card,such as /dev/sdb here
 ```shell
 fdisk -l
